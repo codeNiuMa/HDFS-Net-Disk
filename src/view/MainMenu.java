@@ -97,7 +97,7 @@ public class MainMenu extends JFrame {
 		try {
 			Node=traverseFolder("/");
 		} catch (IOException e1) {
-			// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+			// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 			e1.printStackTrace();
 		}
 		
@@ -115,7 +115,7 @@ public class MainMenu extends JFrame {
 	public MainMenu() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(MainMenu.class.getResource("/pic/tubiao.jpg")));
 		setResizable(false);
-		setTitle("\u5341\u5EA6\u7F51\u76D8  V1.0 author: y22208082\u5B59\u5353\u8FDC");
+		setTitle("\u5341\u5EA6\u7F51\u76D8  V1.0 author: xxx");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(560, 240, 800, 600);
 		
@@ -124,11 +124,11 @@ public class MainMenu extends JFrame {
 		menuBar.setBorderPainted(false);
 		setJMenuBar(menuBar);
 		
-		JMenu xuanxiangNewMenu = new JMenu("Ñ¡Ïî");
-		xuanxiangNewMenu.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 14));
+		JMenu xuanxiangNewMenu = new JMenu("é€‰é¡¹");
+		xuanxiangNewMenu.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 14));
 		menuBar.add(xuanxiangNewMenu);
 		
-		JMenuItem zhuxiaoNewMenuItem = new JMenuItem("×¢Ïú");
+		JMenuItem zhuxiaoNewMenuItem = new JMenuItem("æ³¨é”€");
 		zhuxiaoNewMenuItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				zhuxiao(e);
@@ -137,7 +137,7 @@ public class MainMenu extends JFrame {
 		zhuxiaoNewMenuItem.setHorizontalAlignment(SwingConstants.LEFT);
 		xuanxiangNewMenu.add(zhuxiaoNewMenuItem);
 		
-		JMenuItem gaimimaMenuItem = new JMenuItem("¸ü¸ÄÃÜÂë");
+		JMenuItem gaimimaMenuItem = new JMenuItem("æ›´æ”¹å¯†ç ");
 		gaimimaMenuItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				changepsw(e);
@@ -176,43 +176,43 @@ public class MainMenu extends JFrame {
         rightpanel.add(gongnengpanel);
         gongnengpanel.setLayout(null);
         
-        JButton shangchuanNewButton = new JButton("ÉÏ ´«");
+        JButton shangchuanNewButton = new JButton("ä¸Š ä¼ ");
         shangchuanNewButton.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		upload(e);
         	}
         });
-        shangchuanNewButton.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 16));
+        shangchuanNewButton.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 16));
         shangchuanNewButton.setBounds(46, 10, 93, 49);
         gongnengpanel.add(shangchuanNewButton);
         
-        JButton xiazaiNewButton = new JButton("ÏÂ ÔØ");
+        JButton xiazaiNewButton = new JButton("ä¸‹ è½½");
         xiazaiNewButton.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		download(e);
         	}
         });
-        xiazaiNewButton.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 16));
+        xiazaiNewButton.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 16));
         xiazaiNewButton.setBounds(175, 10, 93, 49);
         gongnengpanel.add(xiazaiNewButton);
         
-        JButton xinjianNewButton = new JButton("ĞÂ ½¨");
+        JButton xinjianNewButton = new JButton("æ–° å»º");
         xinjianNewButton.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		makeNewDir(e);
         	}
         });
-        xinjianNewButton.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 16));
+        xinjianNewButton.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 16));
         xinjianNewButton.setBounds(308, 10, 93, 49);
         gongnengpanel.add(xinjianNewButton);
         
-        JButton shanchuNewButton = new JButton("É¾ ³ı");
+        JButton shanchuNewButton = new JButton("åˆ  é™¤");
         shanchuNewButton.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		delete(e);
         	}
         });
-        shanchuNewButton.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 16));
+        shanchuNewButton.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 16));
         shanchuNewButton.setBounds(439, 10, 93, 49);
         gongnengpanel.add(shanchuNewButton);
         
@@ -223,9 +223,9 @@ public class MainMenu extends JFrame {
         rightpanel.add(pathtextField);
         pathtextField.setColumns(10);
         
-        JLabel lblNewLabel = new JLabel("ÎÄ¼şÄÚÈİ£º");
+        JLabel lblNewLabel = new JLabel("æ–‡ä»¶å†…å®¹ï¼š");
         lblNewLabel.setBounds(10, 79, 111, 19);
-        lblNewLabel.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 14));
+        lblNewLabel.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 14));
         rightpanel.add(lblNewLabel);
         
         JScrollPane scrollPane = new JScrollPane();
@@ -235,7 +235,7 @@ public class MainMenu extends JFrame {
         textPane = new JTextPane();
         textPane.setText("======================\r\n======================\r\n===== \u6B22\u8FCE\u4F7F\u7528\u5341\u5EA6\u7F51\u76D8! =====\r\n======================\r\n======================");
         scrollPane.setViewportView(textPane);
-        textPane.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 16));
+        textPane.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 16));
         textPane.setBackground(new Color(255, 250, 240));
         textPane.setBounds(0, 0, 558, 388);
         
@@ -252,10 +252,10 @@ public class MainMenu extends JFrame {
 		
 	}
 	
-	//É¾³ıÎÄ¼ş
+	//åˆ é™¤æ–‡ä»¶
 	protected void delete(ActionEvent e) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
-		String message = "ÇëÊäÈëĞèÒªÉ¾³ıµÄÎÄ¼ş»òÕßÎÄ¼ş¼ĞÃû£º\n";
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
+		String message = "è¯·è¾“å…¥éœ€è¦åˆ é™¤çš„æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹åï¼š\n";
 		try {
 			List<String> hdfsDir = hadoopOpr.listRemoteDirAndFiles(conf, "/");
 			for (int k = 0; k < hdfsDir.size(); k++) {
@@ -267,28 +267,28 @@ public class MainMenu extends JFrame {
 		String deleteName = pathtextField.getText();
 
 		if (!deleteName.startsWith("hdfs")) {
-			JOptionPane.showMessageDialog(null, "ÇëÑ¡ÔñÓĞĞ§Ä¿Â¼orÎÄ¼ş£¡", "´íÎó", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "è¯·é€‰æ‹©æœ‰æ•ˆç›®å½•oræ–‡ä»¶ï¼", "é”™è¯¯", JOptionPane.ERROR_MESSAGE);
 		} else {
 			try {
-				int result1 = JOptionPane.showConfirmDialog(null, "È·¶¨ÒªÉ¾³ı"+deleteName+"???", "ÌáÊ¾", JOptionPane.OK_CANCEL_OPTION);
-				if(result1==0) {		//0ÊÇÈ·¶¨
+				int result1 = JOptionPane.showConfirmDialog(null, "ç¡®å®šè¦åˆ é™¤"+deleteName+"???", "æç¤º", JOptionPane.OK_CANCEL_OPTION);
+				if(result1==0) {		//0æ˜¯ç¡®å®š
 					hadoopOpr.delDir(conf, deleteName);
-					treescrollPane.getViewport().removeAll();//¼ÓÁËget¡£¡£¡£¿ÉÒÔ¸üĞÂÁË
+					treescrollPane.getViewport().removeAll();//åŠ äº†getã€‚ã€‚ã€‚å¯ä»¥æ›´æ–°äº†
 					inittree();
-					JOptionPane.showMessageDialog(null, "É¾³ı"+deleteName+"³É¹¦£¡", "ÌáÊ¾", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "åˆ é™¤"+deleteName+"æˆåŠŸï¼", "æç¤º", JOptionPane.INFORMATION_MESSAGE);
 				}
 				
 			} catch (Exception e1) {
 				e1.printStackTrace();
 			}
 		}
-		System.out.println("É¾³ıÎÄ¼ş/ÎÄ¼ş¼Ğ³É¹¦!");
+		System.out.println("åˆ é™¤æ–‡ä»¶/æ–‡ä»¶å¤¹æˆåŠŸ!");
 	}
 
 
-	//´´½¨ĞÂÎÄ¼ş¼Ğ
+	//åˆ›å»ºæ–°æ–‡ä»¶å¤¹
 	protected void makeNewDir(ActionEvent e) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Path path = null;
 		String nowpath = pathtextField.getText();
 		
@@ -298,19 +298,19 @@ public class MainMenu extends JFrame {
 			if(nowpath.startsWith("hdfs")) {
 				path = new Path(nowpath);
 				if(fs.isFile(path)) {
-					JOptionPane.showMessageDialog(null, "ÇëÑ¡ÔñÓĞĞ§Ä¿Â¼£¡", "´íÎó", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "è¯·é€‰æ‹©æœ‰æ•ˆç›®å½•ï¼", "é”™è¯¯", JOptionPane.ERROR_MESSAGE);
 				}else {
-					String remoteDir = JOptionPane.showInputDialog(null, "ĞÂÄ¿Â¼Ãû£º");
+					String remoteDir = JOptionPane.showInputDialog(null, "æ–°ç›®å½•åï¼š");
 					if (remoteDir.isEmpty()) {
-						JOptionPane.showMessageDialog(null, "Ä¿Â¼Ãû²»ÄÜÎª¿Õ£¡", "´íÎó", JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(null, "ç›®å½•åä¸èƒ½ä¸ºç©ºï¼", "é”™è¯¯", JOptionPane.ERROR_MESSAGE);
 					} else {
 						
 
 						try {
 							hadoopOpr.makeDir(conf, nowpath+"/"+remoteDir);
-							treescrollPane.getViewport().removeAll();//¼ÓÁËget¡£¡£¡£¿ÉÒÔ¸üĞÂÁË
+							treescrollPane.getViewport().removeAll();//åŠ äº†getã€‚ã€‚ã€‚å¯ä»¥æ›´æ–°äº†
 							inittree();
-							JOptionPane.showMessageDialog(null, "ĞÂ½¨Ä¿Â¼³É¹¦£¡", "ĞÂ½¨", JOptionPane.INFORMATION_MESSAGE);
+							JOptionPane.showMessageDialog(null, "æ–°å»ºç›®å½•æˆåŠŸï¼", "æ–°å»º", JOptionPane.INFORMATION_MESSAGE);
 						} catch (Exception e1) {
 							e1.printStackTrace();
 						}
@@ -318,10 +318,10 @@ public class MainMenu extends JFrame {
 					
 				}
 			}else {
-				JOptionPane.showMessageDialog(null, "ÇëÑ¡ÔñÓĞĞ§Ä¿Â¼£¡", "ÌáÊ¾", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null, "è¯·é€‰æ‹©æœ‰æ•ˆç›®å½•ï¼", "æç¤º", JOptionPane.ERROR_MESSAGE);
 			}
 		} catch (IOException e2) {
-			// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+			// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 			e2.printStackTrace();
 		}
 		
@@ -332,10 +332,10 @@ public class MainMenu extends JFrame {
 	}
 
 
-	//ÏÂÔØ°´Å¥¹¦ÄÜÊµÏÖ
+	//ä¸‹è½½æŒ‰é’®åŠŸèƒ½å®ç°
 	protected void download(ActionEvent e) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
-		String message = "×¼±¸ÏÂÔØµ±Ç°Ñ¡ÖĞÎÄ¼ş£º\n";
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
+		String message = "å‡†å¤‡ä¸‹è½½å½“å‰é€‰ä¸­æ–‡ä»¶ï¼š\n";
 		String downfrom = pathtextField.getText();
 		Path path = null;
 		
@@ -345,45 +345,45 @@ public class MainMenu extends JFrame {
 				path = new Path(downfrom);
 				
 				if(fs.isFile(path)) {
-					//ÊÇÒ»¸öÎÄ¼ş
-					int result1 = JOptionPane.showConfirmDialog(null, message+downfrom, "ÏÂÔØ", JOptionPane.OK_CANCEL_OPTION);
+					//æ˜¯ä¸€ä¸ªæ–‡ä»¶
+					int result1 = JOptionPane.showConfirmDialog(null, message+downfrom, "ä¸‹è½½", JOptionPane.OK_CANCEL_OPTION);
 					if(result1 == 0) {  //0 is yes
 						//windows
 						JFileChooser jf = new JFileChooser();
 						jf.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-						jf.setDialogTitle("ÇëÑ¡ÔñÒªÉÏ´«µÄÎÄ¼ş¼Ğ...");
+						jf.setDialogTitle("è¯·é€‰æ‹©è¦ä¸Šä¼ çš„æ–‡ä»¶å¤¹...");
 						int result2 = jf.showDialog(null, null);
 						
 						if (result2 == JFileChooser.CANCEL_OPTION) {			
-							JOptionPane.showMessageDialog(null, "È¡ÏûÁËÎÄ¼şÏÂÔØ", "ÏÂÔØ", JOptionPane.INFORMATION_MESSAGE);
+							JOptionPane.showMessageDialog(null, "å–æ¶ˆäº†æ–‡ä»¶ä¸‹è½½", "ä¸‹è½½", JOptionPane.INFORMATION_MESSAGE);
 						}else {
 							try {
 								String destPath = jf.getSelectedFile().getAbsolutePath() + "/";
 								HDFSUtil.downloadFromHDFS(downfrom, destPath);
-								System.out.println("ÏÂÔØ³É¹¦!");
+								System.out.println("ä¸‹è½½æˆåŠŸ!");
 							} catch (Exception e1) {
 								e1.printStackTrace();
 							}
 						}
 					}else {
-						JOptionPane.showMessageDialog(null, "È¡ÏûÁËÎÄ¼şÏÂÔØ", "ÏÂÔØ", JOptionPane.INFORMATION_MESSAGE);
+						JOptionPane.showMessageDialog(null, "å–æ¶ˆäº†æ–‡ä»¶ä¸‹è½½", "ä¸‹è½½", JOptionPane.INFORMATION_MESSAGE);
 					}
 				}else {
-					JOptionPane.showMessageDialog(null, "Î´Ñ¡ÖĞ¿ÉÏÂÔØÎÄ¼ş£¡", "ÏÂÔØµ±Ç°ÎÄ¼ş", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "æœªé€‰ä¸­å¯ä¸‹è½½æ–‡ä»¶ï¼", "ä¸‹è½½å½“å‰æ–‡ä»¶", JOptionPane.ERROR_MESSAGE);
 				}
 				
 			}else {
-				JOptionPane.showMessageDialog(null, "Î´Ñ¡ÖĞÓĞĞ§ÎÄ¼ş£¡", "ÏÂÔØµ±Ç°ÎÄ¼ş", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null, "æœªé€‰ä¸­æœ‰æ•ˆæ–‡ä»¶ï¼", "ä¸‹è½½å½“å‰æ–‡ä»¶", JOptionPane.ERROR_MESSAGE);
 			}
 				
 			
 				
 			
 		} catch (HeadlessException e2) {
-			// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+			// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 			e2.printStackTrace();
 		} catch (IOException e2) {
-			// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+			// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 			e2.printStackTrace();
 		}
 		
@@ -392,7 +392,7 @@ public class MainMenu extends JFrame {
 	}
 
 	
-	//ÉÏ´«ÎÄ¼ş°´Å¥
+	//ä¸Šä¼ æ–‡ä»¶æŒ‰é’®
 	protected void upload(ActionEvent e) {
 		
 		String srcPath = "";
@@ -404,48 +404,48 @@ public class MainMenu extends JFrame {
 			if(hdfsPath.startsWith("hdfs")) {
 				path = new Path(hdfsPath);
 				if(fs.isFile(path)) {
-					JOptionPane.showMessageDialog(null, "ÇëÏÈÑ¡Ôñ¿ÉÓÃÎÄ¼ş¼Ğ£¡", "ÌáÊ¾", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "è¯·å…ˆé€‰æ‹©å¯ç”¨æ–‡ä»¶å¤¹ï¼", "æç¤º", JOptionPane.ERROR_MESSAGE);
 				}else {
 					JFileChooser jf = new JFileChooser();
 					jf.setFileSelectionMode(JFileChooser.FILES_ONLY);
-					jf.setDialogTitle("ÇëÑ¡ÔñÎÄ¼ş...");
+					jf.setDialogTitle("è¯·é€‰æ‹©æ–‡ä»¶...");
 					jf.showDialog(null, null);
 					srcPath = jf.getSelectedFile().getAbsolutePath() + "/";
 					//===
 					if (srcPath.isEmpty()) {
-						System.out.println("±¾µØÎÄ¼şÂ·¾¶²»ÄÜÎª¿Õ!");
+						System.out.println("æœ¬åœ°æ–‡ä»¶è·¯å¾„ä¸èƒ½ä¸ºç©º!");
 					}else {
 						if (!hdfsPath.isEmpty()) {
 							try {
 								HDFSUtil.uploadToHDFS(srcPath, hdfsPath);
-								JOptionPane.showMessageDialog(null, "ÉÏ´«³É¹¦£¡", "ÌáÊ¾", JOptionPane.INFORMATION_MESSAGE);
-								treescrollPane.getViewport().removeAll();//¼ÓÁËget¡£¡£¡£¿ÉÒÔ¸üĞÂÁË
+								JOptionPane.showMessageDialog(null, "ä¸Šä¼ æˆåŠŸï¼", "æç¤º", JOptionPane.INFORMATION_MESSAGE);
+								treescrollPane.getViewport().removeAll();//åŠ äº†getã€‚ã€‚ã€‚å¯ä»¥æ›´æ–°äº†
 								inittree();
 								pathtextField.setText("Upload Success!");
-								System.out.println("ÉÏ´«³É¹¦!");
+								System.out.println("ä¸Šä¼ æˆåŠŸ!");
 							} catch (Exception e1) {
 								e1.printStackTrace();
 							}
 						} else {
-							System.out.println("Â·¾¶²»ÄÜÎª¿Õ!");
+							System.out.println("è·¯å¾„ä¸èƒ½ä¸ºç©º!");
 						}
 					}
 					//===
 				}
 			}else {
-				JOptionPane.showMessageDialog(null, "ÇëÏÈÑ¡Ôñ¿ÉÓÃÎÄ¼ş¼Ğ£¡", "ÌáÊ¾", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null, "è¯·å…ˆé€‰æ‹©å¯ç”¨æ–‡ä»¶å¤¹ï¼", "æç¤º", JOptionPane.ERROR_MESSAGE);
 			}
 		} catch (IOException e2) {
-			// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+			// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 			e2.printStackTrace();
 		}
 	
 	}
 
 
-	//ÏÔÊ¾ÎÄ¼şÄÚÈİ
+	//æ˜¾ç¤ºæ–‡ä»¶å†…å®¹
 	protected void showText(TreeSelectionEvent e) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		TreePath path = e.getPath();
 		String pathStr;
 		if(path.toString().equals("[/]")) {
@@ -465,9 +465,9 @@ public class MainMenu extends JFrame {
 			
 			if(!fs.isFile(filepath)) {
 				ArrayList<String> arr1 = new ArrayList<String> ();;
-//				textPane.setText("ÕâÊÇ¸öÎÄ¼ş¼Ğ");
+//				textPane.setText("è¿™æ˜¯ä¸ªæ–‡ä»¶å¤¹");
 				arr1 = hadoopOpr.lsDirStr(conf, wholePath);
-				textPane.setText("´ËÄ¿Â¼°üº¬ÒÔÏÂÄ¿Â¼»òÎÄ¼ş£º\n");
+				textPane.setText("æ­¤ç›®å½•åŒ…å«ä»¥ä¸‹ç›®å½•æˆ–æ–‡ä»¶ï¼š\n");
 				System.out.println(arr1.size());
 				for (int i = 0; i < arr1.size(); i++) {
 					textPane.setCaretPosition(textPane.getDocument().getLength());
@@ -490,9 +490,9 @@ public class MainMenu extends JFrame {
 	}
 
 
-	//µÃµ½Ñ¡ÖĞµÄÎÄ¼şÂ·¾¶ÏÔÊ¾
+	//å¾—åˆ°é€‰ä¸­çš„æ–‡ä»¶è·¯å¾„æ˜¾ç¤º
 	protected void getPath(TreeSelectionEvent e) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		TreePath path = e.getPath();
 		String pathStr;
 		if(path.toString().equals("[/]")) {
@@ -505,9 +505,9 @@ public class MainMenu extends JFrame {
 	}
 
 	
-	//ĞŞ¸ÄÃÜÂë
+	//ä¿®æ”¹å¯†ç 
 	protected void changepsw(ActionEvent e) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		new ChangePsw().setVisible(true);
 		this.setVisible(false);
 	}
@@ -515,20 +515,20 @@ public class MainMenu extends JFrame {
 
 
 	protected void zhuxiao(ActionEvent e) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		new LoginView().setVisible(true);
 		this.setVisible(false);
 	}
 
 
 
-	//Ê÷µİ¹é´úÂë
+	//æ ‘é€’å½’ä»£ç 
 	public static DefaultMutableTreeNode traverseFolder(String path) throws IOException {
 		String nodeName;
 		if(path.equals("/")) {
 			nodeName="/";
 		}else {
-			nodeName = path.substring(path.lastIndexOf('/')+1);//ÊµÏÖµ¥¸öÎÄ¼şÃûÏÔÊ¾
+			nodeName = path.substring(path.lastIndexOf('/')+1);//å®ç°å•ä¸ªæ–‡ä»¶åæ˜¾ç¤º
 		}
 		
         DefaultMutableTreeNode fujiedian = new DefaultMutableTreeNode(nodeName);
@@ -538,18 +538,18 @@ public class MainMenu extends JFrame {
             Path dirPath = new Path(path);
             FileStatus[] files = fs.listStatus(dirPath);
             if (files.length == 0) {
-                if (file.isDirectory()) {// Èç¹ûÊÇ¿ÕÎÄ¼ş¼Ğ
+                if (file.isDirectory()) {// å¦‚æœæ˜¯ç©ºæ–‡ä»¶å¤¹
                     return new DefaultMutableTreeNode(path);
                 }
             } else {
                 for (FileStatus file2 : files) {
                     if (file2.isDirectory()) {
-                        // ÊÇÄ¿ÀïÃæÂ¼µÄ»°£¬Éú³É½Úµã£¬²¢Ìí¼ÓµÄ½Úµã
+                        // æ˜¯ç›®é‡Œé¢å½•çš„è¯ï¼Œç”ŸæˆèŠ‚ç‚¹ï¼Œå¹¶æ·»åŠ çš„èŠ‚ç‚¹
                     	String fileName = file2.getPath().toString();
                         System.out.println("Dir: "+file2.getPath().toString().substring(fileName.lastIndexOf('/')+1, fileName.length()));
                         fujiedian.add(traverseFolder(fileName.substring(21, fileName.toString().length())));
                     } else {
-                        // ÊÇÎÄ¼şµÄ»°Ö±½ÓÉú³É½Úµã£¬²¢°Ñ¸Ã½Úµã¼Óµ½¶ÔÓ¦¸¸½ÚµãÉÏ
+                        // æ˜¯æ–‡ä»¶çš„è¯ç›´æ¥ç”ŸæˆèŠ‚ç‚¹ï¼Œå¹¶æŠŠè¯¥èŠ‚ç‚¹åŠ åˆ°å¯¹åº”çˆ¶èŠ‚ç‚¹ä¸Š
                     	String fileName = file2.getPath().toString();
                         System.out.println("file: "+fileName.substring(fileName.lastIndexOf('/')+1, fileName.length()));
                         
