@@ -33,7 +33,7 @@ public class LoginView extends JFrame {
 	
 
 	/**
-	 * 		ÔËĞĞmainº¯Êı
+	 * 		è¿è¡Œmainå‡½æ•°
 	 */	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -51,11 +51,11 @@ public class LoginView extends JFrame {
 	
 
 	/**
-	 * 		´´½¨¿ò¼Ü
+	 * 		åˆ›å»ºæ¡†æ¶
 	 */
 	public LoginView() {
 		setType(Type.POPUP);
-		setTitle("\u5341\u5EA6\u7F51\u76D8  V1.0 author: y22208082-szy");
+		setTitle("\u5341\u5EA6\u7F51\u76D8  V1.0 author: xxx");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(LoginView.class.getResource("/pic/tubiao.jpg")));
 		setResizable(false);
 		setBackground(Color.WHITE);
@@ -67,14 +67,14 @@ public class LoginView extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel UserNewLabel = new JLabel("ÕË»§Ãû£º");
+		JLabel UserNewLabel = new JLabel("è´¦æˆ·åï¼š");
 		UserNewLabel.setHorizontalAlignment(SwingConstants.RIGHT);
-		UserNewLabel.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 14));
+		UserNewLabel.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 14));
 		UserNewLabel.setBounds(81, 91, 67, 15);
 		contentPane.add(UserNewLabel);
 		
-		JLabel pswNewLabel = new JLabel("ÃÜ   Âë£º");
-		pswNewLabel.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 15));
+		JLabel pswNewLabel = new JLabel("å¯†   ç ï¼š");
+		pswNewLabel.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 15));
 		pswNewLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		pswNewLabel.setBounds(81, 132, 67, 15);
 		contentPane.add(pswNewLabel);
@@ -87,9 +87,9 @@ public class LoginView extends JFrame {
 		mimapasswordField = new JPasswordField();
 		mimapasswordField.setBounds(158, 129, 130, 21);
 		contentPane.add(mimapasswordField);
-		//×¢²á°´Å¥
-		JButton zhuceNewButton = new JButton("×¢ ²á");
-		zhuceNewButton.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 15));
+		//æ³¨å†ŒæŒ‰é’®
+		JButton zhuceNewButton = new JButton("æ³¨ å†Œ");
+		zhuceNewButton.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 15));
 		zhuceNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				newRegister();
@@ -98,23 +98,23 @@ public class LoginView extends JFrame {
 		zhuceNewButton.setBounds(81, 185, 93, 35);
 		contentPane.add(zhuceNewButton);
 		
-		// µÇÂ¼°´Å¥¼àÌıÆ÷
-		JButton loginNewButton = new JButton("µÇ Â¼");
-		loginNewButton.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 15));
+		// ç™»å½•æŒ‰é’®ç›‘å¬å™¨
+		JButton loginNewButton = new JButton("ç™» å½•");
+		loginNewButton.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 15));
 		loginNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
-				LoginAvt(ae);// ×ªÈëµÇÂ¼¹¦ÄÜ
+				LoginAvt(ae);// è½¬å…¥ç™»å½•åŠŸèƒ½
 			}
 		});
 		loginNewButton.setBounds(225, 185, 93, 35);
 		contentPane.add(loginNewButton);
 		
-		JLabel softnameNewLabel = new JLabel("»¶Ó­Ê¹ÓÃÊ®¶ÈÍøÅÌ V1.0£¡");
+		JLabel softnameNewLabel = new JLabel("æ¬¢è¿ä½¿ç”¨ååº¦ç½‘ç›˜ V1.0ï¼");
 		softnameNewLabel.setBackground(SystemColor.window);
 		softnameNewLabel.setBorder(new LineBorder(new Color(0, 0, 0)));
 		softnameNewLabel.setIcon(new ImageIcon(LoginView.class.getResource("/pic/tubiao50.jpg")));
 		softnameNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		softnameNewLabel.setFont(new Font("Î¢ÈíÑÅºÚ", Font.PLAIN, 20));
+		softnameNewLabel.setFont(new Font("å¾®è½¯é›…é»‘", Font.PLAIN, 20));
 		softnameNewLabel.setBounds(39, 22, 311, 53);
 		contentPane.add(softnameNewLabel);
 	}
@@ -122,35 +122,35 @@ public class LoginView extends JFrame {
 
 
 	protected void newRegister() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
-		new Register().setVisible(true); //´ò¿ªĞÂ½çÃæMainMenu
-		this.setVisible(false);//¹Ø±Õ±¾½çÃæ
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
+		new Register().setVisible(true); //æ‰“å¼€æ–°ç•Œé¢MainMenu
+		this.setVisible(false);//å…³é—­æœ¬ç•Œé¢
 	}
 
 
 
 	@SuppressWarnings("deprecation")
 	protected void LoginAvt(ActionEvent ae) {
-		//ÅĞ¶Ï×Ö·û´®ÊÇ·ñÎª¿Õ,ÕâÀïÊÇÈç¹û²»Îª¿Õ,¼ÌĞø
+		//åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä¸ºç©º,è¿™é‡Œæ˜¯å¦‚æœä¸ä¸ºç©º,ç»§ç»­
 		if(!zhanghaotextField.getText().isEmpty() && !mimapasswordField.getText().isEmpty()){ 
-			//µ±µã»÷µÇÂ¼°´Å¥Ê±£¬Ê×ÏÈÓëÊı¾İ¿â½¨Á¢Á¬½Ó
+			//å½“ç‚¹å‡»ç™»å½•æŒ‰é’®æ—¶ï¼Œé¦–å…ˆä¸æ•°æ®åº“å»ºç«‹è¿æ¥
 			DataBase dataBase = new DataBase();
 			dataBase.getCon();
 			boolean result = dataBase.adminLogin(zhanghaotextField.getText().trim(), mimapasswordField.getText().trim());
 			if(result){
-				//µÇÂ¼³É¹¦ 
-				new MainMenu().setVisible(true); //´ò¿ªĞÂ½çÃæMainMenu
-//				this.setVisible(false);//¹Ø±Õ±¾½çÃæ
+				//ç™»å½•æˆåŠŸ 
+				new MainMenu().setVisible(true); //æ‰“å¼€æ–°ç•Œé¢MainMenu
+//				this.setVisible(false);//å…³é—­æœ¬ç•Œé¢
 				this.dispose();
 			}else{
-				//µÇÂ¼Ê§°Ü
-				JOptionPane.showMessageDialog(null, "ÕËºÅ»òÃÜÂëÊäÈë´íÎó£¡", "¾¯¸æ", JOptionPane.ERROR_MESSAGE);
-				mimapasswordField.setText("");//Êä´íÃÜÂëºóÇå¿ÕÃÜÂë
+				//ç™»å½•å¤±è´¥
+				JOptionPane.showMessageDialog(null, "è´¦å·æˆ–å¯†ç è¾“å…¥é”™è¯¯ï¼", "è­¦å‘Š", JOptionPane.ERROR_MESSAGE);
+				mimapasswordField.setText("");//è¾“é”™å¯†ç åæ¸…ç©ºå¯†ç 
 			}
 		}else if(zhanghaotextField.getText().isEmpty()){
-			JOptionPane.showMessageDialog(null,"ÇëÊäÈëÓÃ»§Ãû£¡","ÌáÊ¾",JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(null,"è¯·è¾“å…¥ç”¨æˆ·åï¼","æç¤º",JOptionPane.WARNING_MESSAGE);
 		}else if(mimapasswordField.getText().isEmpty())	{
-			JOptionPane.showMessageDialog(null,"ÇëÊäÈëÃÜÂë£¡","ÌáÊ¾",JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(null,"è¯·è¾“å…¥å¯†ç ï¼","æç¤º",JOptionPane.WARNING_MESSAGE);
 			
 		}
 	}
